@@ -1,0 +1,11 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  padding-top: 100px; /* Account for the header height */
+  flex: 1;
+  overflow: auto; /* Allow content to scroll if needed */
+}

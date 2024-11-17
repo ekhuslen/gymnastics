@@ -1,0 +1,45 @@
+.athleticsJudging {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls select,
+.controls button {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.athletesTable {
+  width: 100%;
+}
+
+.athletesTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.athletesTable th,
+.athletesTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.athletesTable th {
+  background-color: salmon;
+  color: white;
+}
+
+.athletesTable input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}

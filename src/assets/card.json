@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Глобал Спортийн Тэмцээн",
+      "image": "https://plus.unsplash.com/premium_photo-1661963470269-56c47bd63da1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltbmFzdGljfGVufDB8fDB8fHww",
+      "date": "2024-12-10",
+      "description": "Энэ нь дэлхийн хамгийн том спортын тэмцээн бөгөөд олон улсын шилдэг тамирчид оролцоно."
+    },
+    {
+      "id": 2,
+      "name": "Өвлийн Олимпийн Тэмцээн",
+      "image": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/ozdvn6ytshokds8a8dau",
+      "date": "2025-02-01",
+      "description": "Өвлийн спортын шилдэг тэмцээнүүдийг нэгтгэсэн энэхүү Олимпийн наадам олон сая хүнийг татна."
+    },
+    {
+      "id": 3,
+      "name": "Футболын Дэлхийн Цом",
+      "image": "https://www.rockstaracademy.com/lib/images/news/gymnastics.jpeg",
+      "date": "2024-11-20",
+      "description": "Дэлхийн хамгийн том футболын тэмцээн, улсын шилдэг багууд өрсөлдөнө."
+    },
+    {
+      "id": 4,
+      "name": "Теннисийн Уламжлалт Тэмцээн",
+      "image": "https://www.thevegagym.com/wp-content/uploads/2021/12/DSCF6161-scaled.jpg",
+      "date": "2025-05-15",
+      "description": "Дэлхийн шилдэг теннисчид тус тэмцээнд оролцож, алтан медалийн төлөө өрсөлдөнө."
+    },
+    {
+      "id": 5,
+      "name": "Ширээний Теннисний Тэмцээн",
+      "image": "https://jazzrockers.com/cdn/shop/products/Gymnastic-2.jpg?v=1671102641",
+      "date": "2025-06-30",
+      "description": "Ширээний теннисийн дэлхийн шилдэг тамирчид энэхүү тэмцээнд хүч үзнэ."
+    },
+    {
+      "id": 6,
+      "name": "Марафон Тэмцээн",
+      "image": "https://api.time.com/wp-content/uploads/2024/07/team-usa-womens-gymnastics-history.jpg",
+      "date": "2024-10-10",
+      "description": "Хамгийн том марафон тэмцээн, олон мянган оролцогчид ялалтаа авахын төлөө гүйж байна."
+    },
+    {
+      "id": 7,
+      "name": "Кикбоксингийн Дэлхийн Аварга",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlESlxrXZ_OYHxeT5ieJbSle1aItnBo9JKnA&s",
+      "date": "2025-01-25",
+      "description": "Дэлхийн шилдэг кикбоксингийн тамирчид аваргын төлөө өрсөлдөж, шагнал авна."
+    },
+    {
+      "id": 8,
+      "name": "Шахматын Олон Улсын Тэмцээн",
+      "image": "https://media.gettyimages.com/id/642805853/photo/young-female-gymnasts-practicing-on-balance-beams.jpg?s=612x612&w=gi&k=20&c=j8QWHJbrpO2CyUDbUxVAADKAz0M_tb4My0yEJUBPXqg=",
+      "date": "2025-03-20",
+      "description": "Шахматын шилдэг мэргэжилтнүүд энэхүү тэмцээнд өрсөлдөж, дэлхийн аварга болохын төлөө тэмцэнэ."
+    },
+    {
+      "id": 9,
+      "name": "Хөнгөн Атлетикийн Олон Улсын Тэмцээн",
+      "image": "https://hollywoodlife.com/wp-content/uploads/2024/07/GettyImages-2163621622_fb7d11-e1722272020594.jpg?resize=384%2C216",
+      "date": "2025-07-05",
+      "description": "Энэхүү тэмцээн нь хөнгөн атлетикийн бүх төрлийг хамарч, олон улсын шилдэг тамирчдыг нэгтгэдэг."
+    },
+    {
+      "id": 10,
+      "name": "Гольфын Дэлхийн Аварга",
+      "image": "https://img.freepik.com/free-vector/silhouettes-females-gymnastic-poses_1048-18568.jpg",
+      "date": "2025-08-15",
+      "description": "Дэлхийн шилдэг гольфчид энэхүү тэмцээнд оролцож, аварга шалгаруулах болно."
+    }
+  ]
+  

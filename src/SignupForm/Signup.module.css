@@ -1,0 +1,97 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.inputBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px;
+  color: #333;
+}
+
+.inputBox svg {
+  margin-right: 10px;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.inputBox input::placeholder {
+  color: #aaa;
+}
+
+.rememberForgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rememberForgot label {
+  display: flex;
+  align-items: center;
+}
+
+.btn[type="submit"] {
+  width: 100%;
+  background-color: salmon;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn[type="submit"]:hover {
+  background-color: #f94d29;
+}
+
+.form p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form p a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}

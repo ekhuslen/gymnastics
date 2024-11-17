@@ -1,0 +1,70 @@
+/* Home.css */
+
+.home {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home h1 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .competitionList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .competitionList .competitionCard {
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .competition-list .competition-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .competition-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .competition-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .competition-card p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .competition-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .competition-card button:hover {
+    background-color: #0056b3;
+  }
+  
