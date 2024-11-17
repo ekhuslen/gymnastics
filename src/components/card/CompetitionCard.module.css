@@ -43,7 +43,7 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background-color: #ff7b7b;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -53,6 +53,6 @@
   }
   
   .detailsButton:hover {
-    background-color: #e06a6a;
+    background-color: var(--primary-color);
   }
   

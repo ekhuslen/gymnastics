@@ -1,16 +1,20 @@
 import React from 'react';
 import logo from '../../assets/image.png';
-import { FaSearch, FaUser } from 'react-icons/fa';
+import { FaSearch, FaUser, FaSignOutAlt } from 'react-icons/fa';
 import cssDefault from './Header.module.css';
 import cssLoggedIn from './LoggedInHeader.module.css';
 
-function Header({ onLoginClick, onLogoClick, isLoggedIn, onProfileClick }) {
+function Header({ onLoginClick, onLogoClick, isLoggedIn, onProfileClick, onLogoutClick, userRole }) {
   const cssHeader = isLoggedIn ? cssLoggedIn : cssDefault;
 
   return (
     <header className={cssHeader.header}>
       <div className={cssHeader.logo} onClick={onLogoClick}>
-        <img src={logo} alt="Logo" />
+        {isLoggedIn ? (
+          <span className={cssHeader.userRole}>{userRole}</span>
+        ) : (
+          <img src={logo} alt="Logo" />
+        )}
       </div>
       <div className={cssHeader.searchContainer}>
         <div className={cssHeader.searchBox}>
@@ -24,9 +28,15 @@ function Header({ onLoginClick, onLogoClick, isLoggedIn, onProfileClick }) {
           </button>
         </div>
         {isLoggedIn ? (
-          <button onClick={onProfileClick} className={cssHeader.profileButton}>
-            <FaUser className={cssHeader.profileIcon} />
-          </button>
+          <>
+            <button onClick={onProfileClick} className={cssHeader.profileButton}>
+              <FaUser className={cssHeader.profileIcon} />
+            </button>
+            <button onClick={onLogoutClick} className={cssHeader.logoutButton}>
+              <FaSignOutAlt className={cssHeader.logoutIcon} />
+              Гарах
+            </button>
+          </>
         ) : (
           <button onClick={onLoginClick} className={cssHeader.loginButton}>
             Нэвтрэх

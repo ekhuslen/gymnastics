@@ -5,9 +5,12 @@ import Login from './LoginForm/Login';
 import Signup from './SignupForm/Signup';
 import AthleticsJudging from './judge/AthleticsJudging';
 import cssApp from'./App.css'
+import './style.css'
 
 function App() {
   const [page, setPage] = useState('home');
+  const [isLoggedIn, setIsLoggedIn] = useState(true);  // Хэрэглэгчийн нэвтрэх эсэх
+  const [userRole, setUserRole] = useState('admin'); 
 
   const handleLoginClick = () => {
     setPage('login');
@@ -24,6 +27,11 @@ function App() {
   const handleProfileClick = () => {
     setPage('athleticsJudging');
   };
+  const handleLogoutClick = () => {
+    setIsLoggedIn(false);
+    setUserRole('Admin');
+    setPage('home');
+  };
 
   return (
     <div className={cssApp.appContainer}>
@@ -31,8 +39,9 @@ function App() {
         onLoginClick={handleLoginClick} 
         onLogoClick={handleLogoClick} 
         onProfileClick={handleProfileClick} 
+        onLogoutClick={handleLogoutClick} 
         isLoggedIn={true} 
-        groupID ={1}
+        userRole={userRole} 
       />
       
       <main className={cssApp.mainContent}>

@@ -34,7 +34,7 @@
 }
 
 .athletesTable th {
-  background-color: salmon;
+  background-color: var(--primary-color);
   color: white;
 }
 

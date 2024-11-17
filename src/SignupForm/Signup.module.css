@@ -67,7 +67,7 @@ h2 {
 
 .btn[type="submit"] {
   width: 100%;
-  background-color: salmon;
+  background-color: var(--primary-color);
   color: white;
   font-size: 1rem;
   padding: 10px;
@@ -88,7 +88,7 @@ h2 {
 }
 
 .form p a {
-  color: salmon;
+  color: var(--primary-color);
   text-decoration: none;
 }
 

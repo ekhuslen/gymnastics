@@ -67,7 +67,7 @@ form {
 
 .btn[type="submit"] {
   width: 100%;
-  background-color: salmon;
+  background-color: var(--primary-color);
   color: white;
   font-size: 1rem;
   padding: 10px;
@@ -78,7 +78,7 @@ form {
 }
 
 .btn[type="submit"]:hover {
-  background-color: salmon;
+  background-color: var(--primary-color);
 }
 
 .form p {
@@ -88,7 +88,7 @@ form {
 }
 
 .form p a {
-  color: salmon;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
