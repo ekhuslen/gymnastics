@@ -1,0 +1,17 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  padding-top: 80px; 
+  flex: 1;
+  overflow: auto; /* Allow content to scroll if needed */
+}
+
+.mainContents {
+  padding-left: 300px; 
+  flex: 1;
+  overflow: auto; /* Allow content to scroll if needed */
+}

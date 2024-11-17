@@ -1,43 +1,99 @@
+/* Header.module.css */
+
+/* Ерөнхий header styles */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 250px; 
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between; /* Элементийг зайлуулах */
-    align-items: center;
-    padding: 20px 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Элементийг зайлуулах */
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
+.logoContainer {
+  margin-bottom: 20px; /* Логог доош нь татаад харах зай */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userRole {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Линкүүдийг зөв байрлуулах */
+.profileContainer a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.profileContainer a:hover {
+  color: #61dafb;
+}
+
+/* Search, Profile болон Логин/Гарах хэсэг */
 .searchContainer {
-    width: 100%;
-    flex: 1; /* Дунд хэсэгт үлдэгдэл зайг авна */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.profileButton {
-    margin-bottom: 10px; /* "Гарах" товчны өмнө зай гаргах */
-    align-self: center;
-    background-color: #61dafb;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+.searchInput {
+  padding: 5px;
+  margin-right: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchButton {
+  background-color: #61dafb;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Гарах товчийг доош нь байрлуулах */
+  margin-bottom: 20px;
 }
 
 .logoutButton {
-    align-self: center;
-    margin-bottom: 20px; /* Доод талд байрлуулах зай */
-    background-color: #ff6f61;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #ff6f61;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logoutIcon {
+  margin-right: 8px;
+}
+
+.loginButton {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cssAthletics from "./AthleticsJudging.module.css";
+import { FaEdit, FaSave } from "react-icons/fa";
 
 function AthleticsJudging() {
   const [selectedCompetition, setSelectedCompetition] = useState(null);
@@ -10,16 +11,16 @@ function AthleticsJudging() {
       id: 1,
       name: "100m Sprint",
       athletes: [
-        { id: "A1", name: "Athlete 1", score: null },
-        { id: "A2", name: "Athlete 2", score: 1 },
+        { id: "A1232", name: "Тамирчин 1", score: null },
+        { id: "A223", name: "Тамиирчин 2", score: 1 },
       ],
     },
     {
       id: 2,
       name: "Long Jump",
       athletes: [
-        { id: "A3", name: "Athlete 3", score: null },
-        { id: "A4", name: "Athlete 4", score: null },
+        { id: "A313", name: "Тамрчин 3", score: null },
+        { id: "A414", name: "Тамирчин 4", score: null },
       ],
     },
   ];
@@ -58,7 +59,7 @@ function AthleticsJudging() {
       <h1>Тэмцээний мэдээлэл</h1>
       <div className={cssAthletics.controls}>
         <select onChange={handleCompetitionChange}>
-          <option value="">Select Competition</option>
+          <option value="">Тэмцээний төрөл сонгох</option>
           {competitions.map((comp) => (
             <option key={comp.id} value={comp.id}>
               {comp.name}
@@ -70,10 +71,10 @@ function AthleticsJudging() {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Score</th>
-              <th>Action</th>
+              <th>Хувийн дугаар</th>
+              <th>Тамирчны нэр</th>
+              <th>Оноо</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -98,10 +99,12 @@ function AthleticsJudging() {
                   </td>
                   <td>
                     {editingAthlete === athlete.id ? (
-                      <button onClick={() => saveScore(athlete.id)}>Save</button>
+                      <button onClick={() => saveScore(athlete.id)}>
+                      <FaSave />
+                      </button>
                     ) : (
                       <button onClick={() => handleEditScore(athlete.id)}>
-                        Edit Score
+                        <FaEdit /> 
                       </button>
                     )}
                   </td>

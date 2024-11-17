@@ -4,7 +4,7 @@ import Home from './Home/Home';
 import Login from './LoginForm/Login';
 import Signup from './SignupForm/Signup';
 import AthleticsJudging from './judge/AthleticsJudging';
-import cssApp from'./App.css'
+import cssApp from'./App.module.css'
 import './style.css'
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
   };
   const handleLogoutClick = () => {
     setIsLoggedIn(false);
-    setUserRole('Admin');
+    setUserRole('Coach');
     setPage('home');
   };
 
@@ -40,11 +40,12 @@ function App() {
         onLogoClick={handleLogoClick} 
         onProfileClick={handleProfileClick} 
         onLogoutClick={handleLogoutClick} 
-        isLoggedIn={true} 
+        onScoreClick={handleProfileClick}
+        isLoggedIn={false} 
         userRole={userRole} 
       />
       
-      <main className={cssApp.mainContent}>
+      <main className={isLoggedIn ? cssApp.mainContent : cssApp.mainContents}>
         {page === 'home' && <Home />}
         {page === 'login' && <Login onSignupClick={handleSignupClick}/>}
         {page === 'signup' && <Signup />}
