@@ -26,7 +26,6 @@ function AthleticsJudging() {
   ];
   
 
-  // Тэмцээнийг сонгоход харгалзах тамирчид авах
   const handleCompetitionChange = (event) => {
     const competitionId = parseInt(event.target.value, 10);
     setSelectedCompetition(
@@ -36,7 +35,6 @@ function AthleticsJudging() {
     setEditingAthlete(null);
   };
 
-  // Тамирчны оноог хадгалах
   const handleScoreChange = (athleteId, score) => {
     setScores((prev) => ({
       ...prev,
@@ -44,12 +42,10 @@ function AthleticsJudging() {
     }));
   };
 
-  // Оноо оруулах талбарыг харуулах
   const handleEditScore = (athleteId) => {
     setEditingAthlete(athleteId);
   };
 
-  // Оноог хадгалаад input-ыг нуух
   const saveScore = (athleteId) => {
     setEditingAthlete(null);
   };
@@ -87,7 +83,7 @@ function AthleticsJudging() {
                     {editingAthlete === athlete.id ? (
                       <input
                         type="number"
-                        placeholder="Enter score"
+                        placeholder="Оноо оруулах"
                         value={scores[athlete.id] || ""}
                         onChange={(e) =>
                           handleScoreChange(athlete.id, e.target.value)
@@ -112,7 +108,7 @@ function AthleticsJudging() {
               ))}
             {!selectedCompetition && (
               <tr>
-                <td colSpan="4">No competition selected</td>
+                <td colSpan="4">Тэмцээний төрлөө сонгоно уу?</td>
               </tr>
             )}
           </tbody>

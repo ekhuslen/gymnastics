@@ -13,7 +13,7 @@ function Header({ onLoginClick, onLogoClick, isLoggedIn, onLogoutClick, userRole
         {isLoggedIn ? (
           <span className={cssHeader.userRole}>{userRole}</span>
         ) : (
-          <img src={logo} alt="Logo" />
+         <p>hi</p>
         )}
       </div>
 

@@ -6,13 +6,16 @@ import Signup from './SignupForm/Signup';
 import AthleticsJudging from './judge/AthleticsJudging';
 import cssApp from'./App.module.css'
 import './style.css'
+import AthleteList from './AthleteList/AthleteList';
 
 function App() {
   const [page, setPage] = useState('home');
   const [isLoggedIn, setIsLoggedIn] = useState(true);  // Хэрэглэгчийн нэвтрэх эсэх
   const [userRole, setUserRole] = useState('admin'); 
+  const [isViewer, setIsViewer] = useState(true); 
 
   const handleLoginClick = () => {
+    setUserRole('Coach');
     setPage('login');
   };
 
@@ -50,6 +53,7 @@ function App() {
         {page === 'login' && <Login onSignupClick={handleSignupClick}/>}
         {page === 'signup' && <Signup />}
         {page === 'athleticsJudging' && <AthleticsJudging />}
+        {page === 'athleteList' && <AthleteList isViewer={isViewer} />}
       </main>
     </div>
   );

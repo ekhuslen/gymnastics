@@ -40,7 +40,7 @@ function Login({onSignupClick}) {
                 <input type='checkbox'/>Нэвтрэх нэр хадгалах
             </label>
         </div>
-        <button className={loginCSS.btn} type="submit" >Login</button>
+        <button className={loginCSS.btn} type="submit" >Нэвтрэх</button>
         <div>
             <p>Бүртгүүлэх бол <a href='#' onClick={onSignupClick}>энд</a> дарна уу!</p>
         </div>
