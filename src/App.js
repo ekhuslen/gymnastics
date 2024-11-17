@@ -31,7 +31,7 @@ function App() {
         onLoginClick={handleLoginClick} 
         onLogoClick={handleLogoClick} 
         onProfileClick={handleProfileClick} 
-        isLoggedIn={false} 
+        isLoggedIn={true} 
         groupID ={1}
       />
       

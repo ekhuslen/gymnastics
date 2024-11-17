@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from '../../assets/image.png';
-import { FaSearch } from 'react-icons/fa';
-import { FaUser } from 'react-icons/fa';  // Import the user icon for logged-in users
-import cssHeader from './Header.module.css';
+import { FaSearch, FaUser } from 'react-icons/fa';
+import cssDefault from './Header.module.css';
+import cssLoggedIn from './LoggedInHeader.module.css';
 
 function Header({ onLoginClick, onLogoClick, isLoggedIn, onProfileClick }) {
+  const cssHeader = isLoggedIn ? cssLoggedIn : cssDefault;
+
   return (
     <header className={cssHeader.header}>
       <div className={cssHeader.logo} onClick={onLogoClick}>
@@ -23,10 +25,12 @@ function Header({ onLoginClick, onLogoClick, isLoggedIn, onProfileClick }) {
         </div>
         {isLoggedIn ? (
           <button onClick={onProfileClick} className={cssHeader.profileButton}>
-            <FaUser className={cssHeader.profileIcon}/>
+            <FaUser className={cssHeader.profileIcon} />
           </button>
         ) : (
-          <button onClick={onLoginClick} className={cssHeader.loginButton}>Нэвтрэх</button>
+          <button onClick={onLoginClick} className={cssHeader.loginButton}>
+            Нэвтрэх
+          </button>
         )}
       </div>
     </header>
